@@ -1,0 +1,12 @@
+<h3 class="jumbotron-heading">Ejercicios top</h3>
+<div class="col-md-3">
+    <div class="row-cols-4">
+        <a *ngFor="let e of ejercicios" class="a " routerLink="/detalle/{{e.id}}">
+            <div class="module">
+                <h4>{{e.name}}</h4>
+            </div>
+        </a>
+    </div>
+
+
+</div>

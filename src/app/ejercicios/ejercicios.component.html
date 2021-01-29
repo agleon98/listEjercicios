@@ -1,0 +1,10 @@
+<h2>Lista de ejercicios</h2>
+<div>
+    <ul class="">
+        <li *ngFor="let e of ejercicios" (click)="onSelectEjercicio(e)" [class.selected]="e===ejercicioSelected">
+            <a routerLink="/detalle/{{e.id}}">{{e.id}}{{e.name}}</a>
+            <span></span>
+        </li>
+    </ul>
+
+</div>
